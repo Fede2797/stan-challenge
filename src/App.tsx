@@ -10,21 +10,6 @@ function App() {
   const [section, setSection] = useState(sections.SERIES);
   const [contentToDisplay, setContentToDisplay] = useState([]);
 
-  // useEffect(() => {
-  //   if (section === sections.HOME) return;
-  //   if (section === sections.SERIES) {
-  //     setIsLoading(true);
-  //     const content = getSeries();
-  //     setContentToDisplay(content);
-  //     setIsLoading(false);
-  //   } else {
-  //     setIsLoading(true);
-  //     const content = getMovies();
-  //     setContentToDisplay(content);
-  //     setIsLoading(false);
-  //   }
-  // }, [section])
-
   useEffect(() => {
     console.log({ section });
     if (section === sections.HOME) {
