@@ -11,7 +11,6 @@ function App() {
   const [contentToDisplay, setContentToDisplay] = useState([]);
 
   useEffect(() => {
-    console.log({ section });
     if (section === sections.HOME) {
       setContentToDisplay([]);
       return;

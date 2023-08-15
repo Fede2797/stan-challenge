@@ -22,7 +22,6 @@ export const getMovies = async() => {
     const filteredArray = res.entries.filter( (e: Film) => e.releaseYear > 2010 && e.programType === "movie")
                                      .splice(0,21)
                                      .sort( (a: Film, b: Film) => a.title.localeCompare(b.title));
-    console.log({filteredArray});
     return filteredArray;
 }
 
@@ -32,6 +31,5 @@ export const getSeries = async() => {
     const filteredArray = res.entries.filter( (e: Film) => e.releaseYear > 2010 && e.programType === "series")
                                      .splice(0,21)
                                      .sort( (a: Film, b: Film) => a.title.localeCompare(b.title));
-    console.log({filteredArray});
     return filteredArray;
 }
